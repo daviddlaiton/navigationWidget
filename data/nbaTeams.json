@@ -1,0 +1,26 @@
+[
+{"dimension_name": "Classification", "dimension_value": "Architecture", "count": 28, "min_dimension_id": 16397},
+{"dimension_name": "Classification", "dimension_value": "Art", "count": 28, "min_dimension_id": 16397},
+{"dimension_name": "Classification", "dimension_value": "Abstract", "count": 28, "min_dimension_id": 16397},
+{"dimension_name": "Classification", "dimension_value": "Audio", "count": 1, "min_dimension_id": 16425},
+{"dimension_name": "Classification", "dimension_value": "Collage", "count": 3, "min_dimension_id": 16426},
+{"dimension_name": "Classification", "dimension_value": "Design", "count": 211, "min_dimension_id": 16429},
+{"dimension_name": "Classification", "dimension_value": "Drawing", "count": 298, "min_dimension_id": 16640},
+{"dimension_name": "Classification", "dimension_value": "Ephemera", "count": 21, "min_dimension_id": 16938},
+{"dimension_name": "Classification", "dimension_value": "Film", "count": 3, "min_dimension_id": 16959},
+{"dimension_name": "Classification", "dimension_value": "Henry Flynt", "count": 1, "min_dimension_id": 16962},
+{"dimension_name": "Classification", "dimension_value": "Illustrated Book", "count": 352, "min_dimension_id": 16963},
+{"dimension_name": "Classification", "dimension_value": "Installation", "count": 39, "min_dimension_id": 17315},
+{"dimension_name": "Classification", "dimension_value": "Media and Performance Art", "count": 1, "min_dimension_id": 17354},
+{"dimension_name": "Classification", "dimension_value": "Mies van der Rohe Archive", "count": 98, "min_dimension_id": 17355},
+{"dimension_name": "Classification", "dimension_value": "Multiple", "count": 69, "min_dimension_id": 17453},
+{"dimension_name": "Classification", "dimension_value": "Painting", "count": 35, "min_dimension_id": 17522},
+{"dimension_name": "Classification", "dimension_value": "Performance", "count": 2, "min_dimension_id": 17557},
+{"dimension_name": "Classification", "dimension_value": "Periodical", "count": 143, "min_dimension_id": 17559},
+{"dimension_name": "Classification", "dimension_value": "Photograph", "count": 613, "min_dimension_id": 17702},
+{"dimension_name": "Classification", "dimension_value": "Print", "count": 1091, "min_dimension_id": 18315},
+{"dimension_name": "Classification", "dimension_value": "Sculpture", "count": 67, "min_dimension_id": 19406},
+{"dimension_name": "Classification", "dimension_value": "Textile", "count": 3, "min_dimension_id": 19473},
+{"dimension_name": "Classification", "dimension_value": "Video", "count": 34, "min_dimension_id": 19476}
+
+]

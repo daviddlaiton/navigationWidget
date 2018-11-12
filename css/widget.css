@@ -1,0 +1,92 @@
+ul {
+    position: absolute;
+    width: 280px;
+    top: 0px;
+    bottom: 5px;
+    left: 20px;
+    overflow: scroll;
+    margin: 0;
+    padding: 0;
+    border: 2px solid #ccc;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    -webkit-overflow-scrolling: touch;
+  }
+  
+  li {
+    padding: 10px 20px;
+    border-bottom: 1px solid #ccc;
+  }
+  li:last-child {
+    border-bottom: none;
+  }
+
+  .autocomplete-suggestions { 
+      border: 1px solid #999; 
+      background: #fff; 
+      cursor: default; 
+      overflow: auto; 
+    }
+
+  .autocomplete-suggestion { 
+      padding: 10px 5px; 
+      font-size: 1.2em; 
+      white-space: nowrap; 
+      overflow: hidden; }
+  .autocomplete-selected { 
+      background: #f0f0f0;
+     }
+  .autocomplete-suggestions strong { 
+      font-weight: normal; 
+      color: #3399ff; 
+    }
+
+  #searchfield { 
+      display: block;
+      width: 100%; 
+      margin-bottom: 5px;
+     }
+ 
+#searchfield form {
+  display: inline-block;
+  background: #eeefed;
+  padding: 0;
+  margin: 0;
+  padding: 5px;
+  border-radius: 3px;
+  margin: 5px 0 0 0;
+}
+#searchfield form .biginput {
+  width: 410px;
+  height: 40px;
+  padding: 0 10px 0 10px;
+  background-color: #fff;
+  border: 1px solid #c8c8c8;
+  border-radius: 3px;
+  color: #aeaeae;
+  font-weight:normal;
+  font-size: 1.5em;
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+#searchfield form .biginput:focus {
+  color: #858585;
+}
+
+#outputbox {
+  display: none;
+}
+
+.button {
+  background-color: #3399ff;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
