@@ -150,15 +150,14 @@ function drawSelectedByLetter(letter) {
         let bS = d.split(";")[1];
         let bI = d.split(";")[2];
         let texto = d.split(";")[3];
-        let listaElementos = d.split(";")[4];
 
         if (letra === letter) {
 
-            //Rellenar de color #a8c6fa el recuadro seleccionado
+            //Rellenar de color #3399ff el recuadro seleccionado
             ctx.beginPath();
             ctx.clearRect(0, bS, 50, bI - bS);
             ctx.rect(0, bS, 50, bI - bS);
-            ctx.fillStyle = "#a8c6fa";
+            ctx.fillStyle = "#3399ff";
             ctx.fill();
             ctx.fillStyle = "black";
             ctx.fillText(letra, 25 - 6, texto);
@@ -252,12 +251,28 @@ $(document).ready(function () {
         drawSelectedByLetter(letter);
     });
 
-    $("#searchBarButton").click(function(){
+    $("#searchBarButton").click(function () {
         let searchBarValue = document.getElementById("outputcontent").innerHTML;
-        if(searchBarValue !== ""){
-            console.log(searchBarValue);
+        if (searchBarValue !== "") {
+            drawSelectedByLetter(searchBarValue.charAt(0));
+            let arrayOfWords = searchBarValue.split(" ");
+            let idToScrool = "";
+            arrayOfWords.map((word) => {
+                idToScrool = idToScrool + word;
+            });
+            $("#subList").animate({
+                scrollTop: $("#" + idToScrool).position().top
+            }, "slow");
+
+            if (idSubListSelected !== "") {
+                let subListSelected = document.getElementById(idSubListSelected);
+                subListSelected.style.backgroundColor = "white";
+            }
+            let toWhite = document.getElementById(idToScrool);
+            toWhite.style.backgroundColor = "#3399ff";
+            idSubListSelected = idToScrool;
         }
-        else{
+        else {
             alert("Put some value")
         }
     })
