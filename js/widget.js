@@ -122,7 +122,7 @@ function drawSelected(event) {
 
         }
 
-
+        updateSelected();
         return null;
     });
 }
@@ -151,6 +151,7 @@ function drawSelectedByLetter(letter) {
             ctx.fillStyle = "black";
             ctx.fillText(letra, 25 - 6, texto);
         }
+        updateSelected();
         return null;
     });
 
@@ -223,6 +224,11 @@ function allElements() {
     });
 
     return allElements;
+}
+
+function updateSelected(){
+    let innerText = document.getElementById(idSubListSelected).innerHTML;
+    $("#selectedElement").html(innerText);
 }
 
 $(document).ready(function () {
