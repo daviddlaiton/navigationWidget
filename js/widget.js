@@ -1,6 +1,5 @@
 const datosJson = "./data/nbaTeams.json";
 var data = null;
-var selected = false;
 var idSubListSelected = "";
 var elementosMostrados = [];
 
@@ -71,13 +70,8 @@ function drawWidget() {
     ctx.stroke();
     c.addEventListener("click", function (event) {
 
-        if (selected) {
-            selected = false;
-            drawWidget();
-        }
-        else {
-            selected = true;
-        }
+
+        drawWidget();
         drawSelected(event);
     }, false);
 }
@@ -138,12 +132,7 @@ function drawSelectedByLetter(letter) {
     let c = document.getElementById("myCanvas");
     let ctx = c.getContext("2d");
 
-    if (selected) {
-        drawWidget();
-    }
-    else {
-        selected = true;
-    }
+    drawWidget();
 
     elementosMostrados.map((d) => {
         let letra = d.split(";")[0];
@@ -162,8 +151,6 @@ function drawSelectedByLetter(letter) {
             ctx.fillStyle = "black";
             ctx.fillText(letra, 25 - 6, texto);
         }
-
-
         return null;
     });
 
