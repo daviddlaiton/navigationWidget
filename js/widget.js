@@ -228,7 +228,13 @@ function allElements() {
 
 function updateSelected(){
     let innerText = document.getElementById(idSubListSelected).innerHTML;
-    $("#selectedElement").html(innerText);
+    let imageURL = "";
+    data.map((d) => {
+        if(d.dimension_value === innerText){
+            imageURL = d.URL;
+        }
+    });
+    $("#selectedElement").attr("src",imageURL);
 }
 
 $(document).ready(function () {
