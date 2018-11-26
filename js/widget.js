@@ -1,7 +1,8 @@
-const datosJson = "./data/nbaTeams.json";
+const datosJson = "./data/data.json";
 var data = null;
 var idSubListSelected = "";
 var elementosMostrados = [];
+var heightCanvas = 515;
 
 d3.json(datosJson).then(datos => {
     data = datos;
@@ -30,12 +31,12 @@ function drawWidget() {
 
     ctx.font = "20px Arial";
 
-    ctx.clearRect(0, 0, 50, 800);
+    ctx.clearRect(0, 0, 50, heightCanvas);
 
     let lista = makeList();
     let num = data.length;
 
-    let height = 800 / num;
+    let height = heightCanvas / num;
     let width = 50;
 
     let currentLenght = 0;
