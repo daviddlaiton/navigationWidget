@@ -48,10 +48,6 @@ function drawWidget() {
         //Posición donde debe estar cada elemento nuevo dependiendo de la cantidad de elementos que lo componen.
         currentLenght = currentLenght + size;
 
-        //Console.log para poder conocer todas las posiciones y conocer si estan correctas
-        //console.log("height", height, "letra", d, "tamaño", size, "Pos", height * currentLenght - height * size, "rect1", (height * currentLenght), "pos letra", (size * height) / 2 + height * currentLenght - height * size);
-
-
         //Rectangulo
         ctx.rect(0, height * currentLenght - height * size, width, (height * size));
         //Texto
@@ -140,7 +136,6 @@ function drawSelectedByLetter(letter) {
         let bS = d.split(";")[1];
         let bI = d.split(";")[2];
         let texto = d.split(";")[3];
-
         if (letra === letter) {
 
             //Rellenar de color #3399ff el recuadro seleccionado
@@ -151,6 +146,7 @@ function drawSelectedByLetter(letter) {
             ctx.fill();
             ctx.fillStyle = "black";
             ctx.fillText(letra, 25 - 6, texto);
+
         }
         updateSelected();
         return null;
@@ -254,7 +250,6 @@ $(document).ready(function () {
     $("#searchBarButton").click(function () {
         let searchBarValue = document.getElementById("outputcontent").innerHTML;
         if (searchBarValue !== "") {
-            drawSelectedByLetter(searchBarValue.charAt(0));
             let arrayOfWords = searchBarValue.split(" ");
             let idToScrool = "";
             arrayOfWords.map((word) => {
@@ -271,6 +266,7 @@ $(document).ready(function () {
             let toWhite = document.getElementById(idToScrool);
             toWhite.style.backgroundColor = "#3399ff";
             idSubListSelected = idToScrool;
+            drawSelectedByLetter(searchBarValue.charAt(0));
         }
         else {
             alert("Put some value")
