@@ -42,14 +42,18 @@
     </div>
     <br>
     <div class="row">
-      <div class="col-sm-1">
-        <canvas id="myCanvas" width="50" height="515" style="border:1px solid #d3d3d3;"></canvas>
+      <div class="col-xl-4">
+        <div class="row">
+          <div class="col-xl-2">
+            <canvas id="list" width="50" height="515" style="border:1px solid #d3d3d3;"></canvas>
+          </div>
+          <div class="col-xl-4">
+            <ul class="subList" id="subList">
+            </ul>
+          </div>
+        </div>
       </div>
-      <div class="col-sm-4">
-        <ul class="subList" id="subList">
-        </ul>
-      </div>
-      <div class="col-sm-4">
+      <div class="col-xl-4">
         <img id="selectedElement" src="./data/initialImage.png" width="500" height="500">
       </div>
     </div>
@@ -71,6 +75,11 @@
 
   <!--JS of the Widget-->
   <script src="js/widget.js"></script>
+
+  <script>
+    var navigationWidget = widget("./data/data.json", 515, 50);
+
+  </script>
 </body>
 
 </html>
