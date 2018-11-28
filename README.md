@@ -1,12 +1,13 @@
 # Navigation Widget
 
 This is a Navigation widget for large collection of files. This widget is made to provide an easy-to-use tool for the user that shows all the information available. Additionally, the files can be filtered, search and summarized, allowing users ti easily navigate and explore the files.
+
 ![Navigation Widget Demo with the MoMA Collection](data/thumbnail.gif)
 
-##Demo
+## Demo
 [MoMA Collection](https://daviddlaiton.github.io/navigationWidget/) 
 
-##Getting started
+## Getting started
 ### Prerequisites
 
 Firstly, you need to install nodeJS, the installer can be downloaded from: https://nodejs.org/es/
@@ -27,7 +28,7 @@ Checklist
 ```
 Reload
 ```
-###How to run it
+### How to run it
 To get a copy of these project install git bash, open it from the command line and use 
 $ git clone: https://github.com/daviddlaiton/navigationWidget.git
 
@@ -38,7 +39,7 @@ $ reload
 ```
 Then open your preferer browser and open localhost:8080
 
-##Usage
+## Usage
 
 TLDR
 ```html
@@ -107,7 +108,7 @@ TLDR
 
 </html>
 ```
-###Step by step
+### Step by step
 
 1. Start with this template. This have all the external scripts and styles.
 
